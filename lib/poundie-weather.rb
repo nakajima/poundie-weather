@@ -4,7 +4,6 @@ class PoundieWeather < Poundie::Plugin
   register :poundie_weather
 
   match do |message|
-    puts "checking #{message.body.inspect}"
     message.body =~ /^poundie weather /
   end
 
